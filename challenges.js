@@ -1,10 +1,10 @@
 function compareTrue(compareTrueParam1, compareTrueParam2) {
-  compareTrueAnswer = false;
-  if (compareTrueParam1 && compareTrueParam2 === true) {{
+  let compareTrueAnswer = false;
+  if (compareTrueParam1 && compareTrueParam2 === true) {
     compareTrueAnswer = true;
   }
-    return compareTrueAnswer;
-  }
+  return compareTrueAnswer;
+}
 }
 
 compareTrue();
@@ -83,7 +83,7 @@ function catAndMouse(mouse, cat1, cat2) {
     catAndMouseAnswer = 'os gatos trombam e o rato foge';
   }
   return catAndMouseAnswer;
-};
+}
 
 catAndMouse();
 
@@ -176,13 +176,13 @@ generatePhoneNumber();
 function triangleCheck(lineA, lineB, lineC) {
   let triangleVialiliy = false;
   if (lineA < 0) {
-    lineA = lineA * -1;
+    lineA += * -1;
   }
   if (lineB < 0) {
-    lineB = lineB * -1;
+    lineB += * -1;
   }
   if (lineC < 0) {
-    lineC = lineC * -1;
+    lineC += * -1;
   }
   if ((lineB - lineC) < lineA < (lineB + lineC) || (lineA - lineC) < lineB < (lineA + lineC) || (lineA - lineB) < lineC < (lineA + lineB)) {
     triangleVialiliy = true;
