@@ -1,8 +1,9 @@
 function compareTrue(compareTrueParam1, compareTrueParam2) {
-  if (compareTrueParam1 && compareTrueParam2 === true) {
-    return true;
-  } else {
-    return false;
+  compareTrueAnswer = false;
+  if (compareTrueParam1 && compareTrueParam2 === true) {{
+    compareTrueAnswer = true;
+  }
+    return compareTrueAnswer;
   }
 }
 
@@ -90,15 +91,15 @@ function fizzBuzz(fizzBuzzParam) {
   let fizzBuzzAnswer = [];
   for (let index = 0; index < fizzBuzzParam.length; index += 1) {
     if (fizzBuzzParam[index] % 3 === 0 && fizzBuzzParam[index] % 5 !== 0) {
-      fizzBuzzAnswer.push("fizz");
+      fizzBuzzAnswer.push('fizz');
     }
     if (fizzBuzzParam[index] % 5 === 0 && fizzBuzzParam[index] % 3 !== 0) {
-      fizzBuzzAnswer.push("buzz");
+      fizzBuzzAnswer.push('buzz');
     }
     if (fizzBuzzParam[index] % 5 === 0 && fizzBuzzParam[index] % 3 === 0) {
-      fizzBuzzAnswer.push("fizzBuzz");
+      fizzBuzzAnswer.push('fizzBuzz');
     } else {
-      fizzBuzzAnswer.push("bug!");
+      fizzBuzzAnswer.push('bug!');
     }
   }
   return fizzBuzzAnswer;
@@ -110,17 +111,17 @@ function encode(encodeParam) {
   let encodeAnswer = '';
   for (let index = 0; index < encodeParam.length; index += 1) {
     if (encodeParam[index] === 'a') {
-      encodeAnswer = encodeAnswer + 1;
+      encodeAnswer += 1;
     } else if (encodeParam[index] === 'e') {
-      encodeAnswer = encodeAnswer + 2;
+      encodeAnswer += 2;
     } else if (encodeParam[index] === 'i') {
-      encodeAnswer = encodeAnswer + 3;
+      encodeAnswer += 3;
     } else if (encodeParam[index] === 'o') {
-      encodeAnswer = encodeAnswer + 4;
+      encodeAnswer += 4;
     } else if (encodeParam[index] === 'u') {
-      encodeAnswer = encodeAnswer + 5;
+      encodeAnswer += 5;
     } else {
-      encodeAnswer = encodeAnswer + encodeParam[index];
+      encodeAnswer += encodeParam[index];
     }
   }
   return encodeAnswer;
@@ -132,17 +133,17 @@ function decode(decodeParam) {
   let decodeAnswer = '';
   for (let index = 0; index < decodeParam.length; index += 1) {
     if (decodeParam[index] === '1') {
-      decodeAnswer = decodeAnswer + 'a';
+      decodeAnswer += 'a';
     } else if (decodeParam[index] === '2') {
-      decodeAnswer = decodeAnswer + 'e';
+      decodeAnswer += 'e';
     } else if (decodeParam[index] === '3') {
-      decodeAnswer = decodeAnswer + 'i';
+      decodeAnswer += 'i';
     } else if (decodeParam[index] === '4') {
-      decodeAnswer = decodeAnswer + 'o';
+      decodeAnswer += 'o';
     } else if (decodeParam[index] === '5') {
-      decodeAnswer = decodeAnswer + 'u';
+      decodeAnswer += 'u';
     } else {
-      decodeAnswer = decodeAnswer + decodeParam[index];
+      decodeAnswer += decodeParam[index];
     }
   }
   return decodeAnswer;
@@ -153,18 +154,18 @@ decode();
 function generatePhoneNumber(generatePhoneNumberParam) {
   let generatePhoneNumberAnswer = '(' + generatePhoneNumberParam[0] + generatePhoneNumberParam[1] + ') ';
   for (let index = 2; index < generatePhoneNumberParam.length - 4; index += 1) {
-    generatePhoneNumberAnswer = generatePhoneNumberAnswer + (generatePhoneNumberParam[index]);
+    generatePhoneNumberAnswer += (generatePhoneNumberParam[index]);
   }
-  generatePhoneNumberAnswer = generatePhoneNumberAnswer + '-';
+  generatePhoneNumberAnswer += '-';
   for (let index = 7; index < generatePhoneNumberParam.length; index += 1) {
-    generatePhoneNumberAnswer = generatePhoneNumberAnswer + (generatePhoneNumberParam[index]);
+    generatePhoneNumberAnswer += (generatePhoneNumberParam[index]);
   }
   if (generatePhoneNumberParam.length !== 11) {
     generatePhoneNumberAnswer = 'Array com tamanho incorreto';
   }
   for (let index = 0; index < generatePhoneNumberParam.length; index += 1) {
     if (generatePhoneNumberParam[index] < 0 || generatePhoneNumberParam[index] > 9) {
-      generatePhoneNumberAnswer = "não é possível gerar um número de telefone com esses valores";
+      generatePhoneNumberAnswer = 'não é possível gerar um número de telefone com esses valores';
     }
   }
   return generatePhoneNumberAnswer;
