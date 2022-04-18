@@ -15,8 +15,8 @@ function splitSentence(splitSentenceParam) {
   return splitSentenceAnswer
 }
 
-function splitSentence(splitSentenceParam) {
-  return splitSentenceParam[splitSentenceParam.length] + ', ' + splitSentenceParam[0] + '.';
+function concatName(concatNameParam) {
+  return concatNameParam[concatNameParam.length] + ', ' + concatNameParam[0] + '.';
 }
 
 function footballPoints(wins, ties) {
