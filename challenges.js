@@ -5,7 +5,6 @@ function compareTrue(compareTrueParam1, compareTrueParam2) {
   }
   return compareTrueAnswer;
 }
-}
 
 compareTrue();
 
