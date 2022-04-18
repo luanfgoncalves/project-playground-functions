@@ -6,22 +6,32 @@ function compareTrue(compareTrueParam1, compareTrueParam2) {
   }
 }
 
+compareTrue();
+
 function calcArea(base, height) {
-  return (base * height) / 2
+  return (base * height) / 2;
 }
+
+calcArea();
 
 function splitSentence(splitSentenceParam) {
   let splitSentenceAnswer = splitSentenceParam.split(' ');
-  return splitSentenceAnswer
+  return splitSentenceAnswer;
 }
+
+splitSentence();
 
 function concatName(concatNameParam) {
   return concatNameParam[concatNameParam.length] + ', ' + concatNameParam[0] + '.';
 }
 
+concatName();
+
 function footballPoints(wins, ties) {
   return (wins * 3) + ties;
 }
+
+footballPoints();
 
 function highestCount(highestCountParam) {
   let maxValue = 0;
@@ -39,38 +49,42 @@ function highestCount(highestCountParam) {
   return maxValueOcurrence;
 }
 
+highestCount();
+
 function catAndMouse(mouse, cat1, cat2) {
   let cat1Distance = 0;
   let cat2Distance = 0;
   let catAndMouseAnswer = null;
   if (mouse < 0) {
-    mouse = (mouse * -1)
-  };
-  if (cat1 < 0) {
-    cat1 = (cat1 * -1)
-  };
-  if (cat2 < 0) {
-    cat2 = (cat2 * -1)
-  };
-  if (cat1 >= mouse) {
-    cat1Distance = cat1 - mouse
-  } else {
-    cat1Distance = mouse - cat1
-  };
-  if (cat2 >= mouse) {
-    cat2Distance = cat2 - mouse
-  } else {
-    cat2Distance = mouse - cat2
-  };
-  if (cat1Distance > cat2Distance) {
-    catAndMouseAnswer = 'cat1'
-  } else if (cat2Distance > cat1Distance) {
-    catAndMouseAnswer = 'cat2'
-  } else {
-    catAndMouseAnswer = 'os gatos trombam e o rato foge'
+    mouse = (mouse * -1);
   }
-  return catAndMouseAnswer
+  if (cat1 < 0) {
+    cat1 = (cat1 * -1);
+  }
+  if (cat2 < 0) {
+    cat2 = (cat2 * -1);
+  }
+  if (cat1 >= mouse) {
+    cat1Distance = cat1 - mouse;
+  } else {
+    cat1Distance = mouse - cat1;
+  }
+  if (cat2 >= mouse) {
+    cat2Distance = cat2 - mouse;
+  } else {
+    cat2Distance = mouse - cat2;
+  }
+  if (cat1Distance > cat2Distance) {
+    catAndMouseAnswer = 'cat1';
+  } else if (cat2Distance > cat1Distance) {
+    catAndMouseAnswer = 'cat2';
+  } else {
+    catAndMouseAnswer = 'os gatos trombam e o rato foge';
+  }
+  return catAndMouseAnswer;
 };
+
+catAndMouse();
 
 function fizzBuzz(fizzBuzzParam) {
   let fizzBuzzAnswer = [];
@@ -81,7 +95,7 @@ function fizzBuzz(fizzBuzzParam) {
     if (fizzBuzzParam[index] % 5 === 0 && fizzBuzzParam[index] % 3 !== 0) {
       fizzBuzzAnswer.push("buzz");
     }
-    if (fizzBuzzParam[index] % 5 == 0 && fizzBuzzParam[index] % 3 === 0) {
+    if (fizzBuzzParam[index] % 5 === 0 && fizzBuzzParam[index] % 3 === 0) {
       fizzBuzzAnswer.push("fizzBuzz");
     } else {
       fizzBuzzAnswer.push("bug!");
@@ -89,6 +103,8 @@ function fizzBuzz(fizzBuzzParam) {
   }
   return fizzBuzzAnswer;
 }
+
+fizzBuzz();
 
 function encode(encodeParam) {
   let encodeAnswer = '';
@@ -110,6 +126,8 @@ function encode(encodeParam) {
   return encodeAnswer;
 }
 
+encode();
+
 function decode(decodeParam) {
   let decodeAnswer = '';
   for (let index = 0; index < decodeParam.length; index += 1) {
@@ -130,8 +148,10 @@ function decode(decodeParam) {
   return decodeAnswer;
 }
 
+decode();
+
 function generatePhoneNumber(generatePhoneNumberParam) {
-  let generatePhoneNumberAnswer = "(" + generatePhoneNumberParam[0] + generatePhoneNumberParam[1] + ") ";
+  let generatePhoneNumberAnswer = '(' + generatePhoneNumberParam[0] + generatePhoneNumberParam[1] + ') ';
   for (let index = 2; index < generatePhoneNumberParam.length - 4; index += 1) {
     generatePhoneNumberAnswer = generatePhoneNumberAnswer + (generatePhoneNumberParam[index]);
   }
@@ -149,6 +169,8 @@ function generatePhoneNumber(generatePhoneNumberParam) {
   }
   return generatePhoneNumberAnswer;
 }
+
+generatePhoneNumber();
 
 function triangleCheck(lineA, lineB, lineC) {
   let triangleVialiliy = false;
@@ -168,3 +190,5 @@ function triangleCheck(lineA, lineB, lineC) {
   }
   return triangleVialiliy;
 }
+
+triangleCheck();
