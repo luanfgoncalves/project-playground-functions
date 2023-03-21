@@ -20,9 +20,7 @@ nele desenvolvi funções diversas para demonstar conhecimentos básicos em JS.
 <h2 align="center"> Preview: </h2>
 
 <div align="center">
-  <div style="text-align:center">
     <img src="./imgs/preview.png" width="768px" height="432px" alt="Preview"/>
-  </div>
 </div>
 
 #
@@ -57,22 +55,25 @@ nele desenvolvi funções diversas para demonstar conhecimentos básicos em JS.
 
   <div align="left">
   
-  * Git - <i> `git -v` informará a versão em uso.</i>
+  * Git - <i>`git -v` informará a versão em uso.</i>
 
   </div>
 
   #
-
   </details>
 
-    <div align="left">
-      
-      1. Faça a clonagem do projeto - <i>Este projeto não utiliza dependências externas</i>
-      > `git@github.com:luanfgoncalves/project-playground-functions.git`
-      2. Abra challenges.js e challenges2.js- <i>As funções podem ser testadas atrávés da extensão `Code Runner` no VScode</i>
-      > Todas as funções e desafios realizados estão dentro de `/src`.
+  <div align="left">  
 
-    </div>
+  1. Faça a clonagem do projeto - <i>Este projeto não utiliza dependências externas</i>
+   
+  ```shell
+  git clone git@github.com:luanfgoncalves/project-playground-functions.git
+  ```
+
+  2. Abra challenges.js e challenges2.js- <i>As funções podem ser testadas atrávés da extensão `Code Runner` no VScode</i>
+  > Todas as funções e desafios realizados estão dentro de `/src`.
+
+  </div>
 
 </details>
 
